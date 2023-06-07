@@ -24,17 +24,17 @@ let direction = "right"
  //Função para criar o Background
  function criarBG() {
     context.fillStyle = "lightgreen"
-
 //Desenha o retângulo usando x e y e a largura e autura setadas
      context.fillRect(0, 0, 16 * box, 16 * box);
  }
 
  //Função para criar a cobrinha
    function criarCobrinha (){
-      for(i = 0; i < snake.length; i++){
+      for(i = 0; i < snake.length; i++) {
           context.fillStyle = "green"
           context.fillRect(snake[i].x, snake[i].y, box, box)
       }
+     
     }
 
       //Função para desenhar comida
@@ -54,14 +54,14 @@ let direction = "right"
       }
 
       //Função Principal 
-      function iniciarJogo(){
-        if(snake[0].x > 15*box && direction == "right"){
+      function iniciarJogo() {
+        if(snake[0].x > 15*box && direction == "right") {
             snake[0].x = 0;
         }
-        if(snake[0].x < 0 && direction == "left"){
+        if(snake[0].x < 0 && direction == "left") {
             snake[0].x = 16 * box;
         }
-        if(snake[0].y > 15*box && direction == "down"){
+        if(snake[0].y > 15*box && direction == "down") {
             snake[0].y = 0;
         }
         if(snake[0].y < 0 && direction == "up"){
@@ -86,10 +86,10 @@ let direction = "right"
         if(direction == "up") snakeY -= box;
         if(direction == "down") snakeY += box;
 
-        if( snakeX != food.x || snaKeY != food.y) {
+        if( snakeX != food.x || snakeY != food.y) {
             //pop tira o ultimo elemento da lista
             snake.pop();
-        }else{
+        }else {
             food.x = Math.floor(Math.random() * 15 +1) * box;
             food.y = Math.floor(Math.random() * 15 +1) * box;
         }

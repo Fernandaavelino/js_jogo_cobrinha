@@ -1,7 +1,12 @@
 body {
+    background-color: rgb(62, 255, 213);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+h1 {
+    font-family: Lucida Handwriting;
+    font-size: 37px;
+}
