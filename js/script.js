@@ -101,3 +101,7 @@ let direction = "right"
         snake.unshift(newHead) 
       }
       let jogo = setInterval(iniciarJogo, 250);
+      
+  
+      
+      

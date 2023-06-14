@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(62, 255, 213);
+    background-image:url(fundo0.png);
+    background-color: rgb(223, 255, 255);
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
